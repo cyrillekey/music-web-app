@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.iconburg {
+    display: none;
+}
+.singupsect{
+    display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+  background: #33b1f8;
+}
+.form-group {
+    position: relative;
+    margin: 0 0 30px;
+  }
+  .form-group label {
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    z-index: -1;
+    color: #999;
+    font-size: 10px;
+    opacity: 0;
+    text-align: right;
+    text-transform: uppercase;
+    -webkit-transition: top .2s ease;
+    transition: top .2s ease;
+  }
+  .form-group .form-control {
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #cfd8dc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    outline: none;
+  }
+  .form-group .form-control:hover {
+    border-color: #a0c4fc;
+  }
+  .form-group .form-control:focus {
+    box-shadow: none;
+    border-color: #268ff4;
+  }
+  .form-group .suggestion {
+    display: none;
+    margin: 5px 0 -5px;
+    padding-right: 5px;
+    color: #999;
+    font-style: italic;
+    font-size: 13px;
+    text-align: right;
+  }
+  .form-group .suggestion a {
+    color: red;
+    cursor: pointer;
+  }
+  .form-group .reveal-password {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    opacity: .7;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+  }
+  .form-group .reveal-password .icon {
+    width: 18px;
+    height: 14px;
+    fill: #666;
+  }
+  .form-group .reveal-password.active .icon {
+    fill: #268ff4;
+  }
+  .form-group.filled label {
+    position: absolute;
+    top: -13px;
+    left: 4px;
+    z-index: 1;
+    font-size: 10px;
+    opacity: 1;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  .form-group.filled .reveal-password {
+    display: block;
+  }
+  .form-group.error label {
+    color: #f00;
+  }
+  .form-group.error .form-control {
+    box-shadow: none;
+    border-color: #f00;
+  }
+  .form-group.focus label {
+    color: #3e9bf7;
+  }
+  .form-group.focus .form-control {
+    box-shadow: none;
+    border-color: #268ff4;
+  }
+  .form .btn {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #4da3f8;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    white-space: nowrap;
+    outline: none;
+  }
+  .form .btn:hover {
+    background: #3e9bf7;
+  }
+  .palbum{
+      border: none;
+  }
+  
+  /*--------------------
+  Signup
+  --------------------*/
+  .signup {
+    width: 400px;
+  }
+  .signup h1 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0 0 20px 26px;
+  }
+  .signup .form {
+    padding: 35px 30px;
+    background: #fff;
+    box-shadow: 0 15px 12px 0 rgba(0, 0, 0, 0.04), 0 19px 38px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+  }
+
+  .formsign{
+    margin-top:8px;
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+  .formsign:hover{
+    color: red;
+    border-bottom: solid thin black;
+    width:max-content;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------
+
+landing page
+
+------------------------------------------*/
+.landing {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    font-weight: 400;
+    background-image: url("../img/bruce-mars-DBGwy7s3QY0-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+nav {
+    height: 15vh;
+    background-color: #2f4858;
+}
+.logo {
+    margin-top: .5%;
+    float: left;
+    font-weight: bold;
+    font-size: 2em;
+}
+.logo a {
+    position: static;
+    text-decoration: none;
+    color: #00cfa4;
+    font-family: aclonica;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.account {
+    margin-top: 2%;
+    float: right;
+}
+.account a {
+    text-decoration: none;
+    color: blanchedalmond;
+    padding: 5px;
+    font-size: 1.2em;
+}
+.account .signup {
+    color: red;
+}
+
+.mainbar {
+    position: absolute;
+    margin-left:35%;
+    margin-top: 2%;
+}
+.mainbar ul li {
+    list-style: none;
+    display: inline-block;
+}
+.mainbar ul li a {
+    color: blanchedalmond;
+    font-size: 20px;
+    padding-left: 30px;
+}
+.mainbar ul li a {
+    text-decoration: none;
+}
+.mainbar ul li a:hover {
+    color: red;
+}
+.caatmenu ul {
+    display: none;
+}
+.caatmenu ul li {
+    border: solid;
+    display: block;
+    width: 25%;
+    height: 30px;
+}
+#cat:hover .caatmenu ul {
+    display: block;
+}
+#help {
+    color: #979aa5;
+}
+#welcome {
+    height: 85vh;
+}
+#welcome p {
+    text-align: center;
+}
+#forevery {
+    margin-top: 4%;
+    color: darkblue;
+    text-align: center;
+    font-size: 6em;
+    font-weight: 600;
+}
+#welcome p {
+    margin-top: 2%;
+    font-size: 2em;
+    color: black
+}
+#buttons {
+    position: static;
+    margin-top: 3%;
+    width: 40%;
+    margin-left: 35%;
+    margin-bottom: 5%;
+}
+.dnbt {
+    margin-left: 5%;
+    margin-bottom: auto;
+}
+.dnbt {
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    font-size: 20px;
+    min-width: 195px;
+    padding: 23px 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    background: #fc0254;
+    color: blanchedalmond;
+    line-height: normal;
+    cursor: pointer;
+    text-align: center;
+}
+.dnbt:hover {
+    color: black;
+    background-color: darkgray;
+}
+#help:hover {
+    color: white;
+}
+.login:hover, .signup:hover {
+    color: green;
+}
+/*login  account*/
+.userdetails {
+    position: absolute;
+    right: 0;
+    margin-top: 1.5%;
+    width: 10%;
+    border: solid white;
+}
+.userdetails a {
+    display: block;
+    color: blanchedalmond;
+    font-size: 20px;
+}
+#dethid {
+    display: none;
+    background: #2f4858;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+}
+.detailhidden:hover {
+    color: red;
+    text-decoration: none;
+}
+#log {
+    border-radius: 0px;
+    margin-left: 0;
+    padding-left: 0;
+    background: #2f4858;
+    color: blanchedalmond;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    font-weight: 500;
+}
+#log:hover {
+    color: red;
+}
+/*----------------------------------------------------
+	
+	Service explanation page
+	
+------------------------------------------------------*/
+#explanation {
+    height: 50vh;
+    overflow: hidden;
+}
+.left {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+#exp {
+    margin-left: 5%;
+    color: #0a183d;
+    font-size: 4em;
+    margin-top: 15%;
+    font-weight: 600;
+}
+.right {
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+.partners {
+    margin-top: 15%;
+    margin-left: 5%;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+#try {
+    margin-top: 5%;
+}
+/*-----------------------------------------------------
+
+	How it works section
+
+------------------------------------------------------*/
+#howit {
+    height: 50vh;
+    background-color: #2f4858;
+    overflow: hidden;
+}
+.howtt {
+    padding-top: 2%;
+    height: 15%;
+    padding-left: 5%;
+    font-size: 60px;
+    color: blanchedalmond;
+    font-weight: 600;
+}
+.first {
+    float: left;
+    height: 85%;
+    width: 33.333%;
+}
+.step {
+    margin-top: 15%;
+    margin-left: 10%;
+    color: blanchedalmond;
+    font-size: 25px;
+}
+.first p {
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.step1 {
+    padding-top: 5%;
+    color: whitesmoke;
+    height: 60%;
+}
+/*------------------------------------------------------
+
+	Pricing
+
+-----------------------------------------------------------*/
+#pricing {
+    height: 100vh;
+    overflow: hidden;
+}
+.text-center {
+    text-align: center;
+    font-weight: 600;
+    color: #0a183d;
+}
+.pricing-box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pricing-box {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    flex: 1;
+    padding: 0 30px 30px;
+    margin: 2%;
+    min-width: 250px;
+    max-width: 350px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.pricing-box h5 {
+    padding-top: 8%;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.price {
+    margin: 24px 0;
+    font-size: 36px;
+    font-weight: 900;
+}
+.price sub, .price sup {
+    font-size: 16px;
+    font-weight: 100;
+}
+.features-list {
+    padding: 0;
+    list-style-type: none;
+    border-bottom-color: black;
+}
+.features-list li {
+    font-weight: 100;
+    padding: 12px 0;
+}
+.features-list li:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+    border-radius: 25px;
+    border: none;
+    background-color: #fc0254;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+}
+.btn-primary:hover {
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+.pricing-box-bg-image {
+    background-image: url("../img/sagaya-abdulhafeez-AStCNS1DdrA-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.pricing-box-bg-image .features-list li {
+    border-bottom-color: rgba(255, 255, 255, 1);
+}
+.pricing-box-bg-image .btn-primary {
+    background-color: #ffffff;
+    color: #000;
+}
+/*-------------------------------------------------------------------
+
+footer section
+
+---------------------------------------------------------------------*/
+#normal {
+    background-color: #2f4858;
+    height: 20vh;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5%;
+    color: blanchedalmond;
+}
+.copyright a {
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 5%;
+    color: blanchedalmond;
+}
+.copyright a:hover {
+    color: deeppink;
+}
+/*-----------------------------------------------------------------
+
+	Main page section
+
+------------------------------------------------------------------*/
+.player {
+    background-color: #262626;
+}
+.browsearch {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.alb {
+    color: white;
+    padding-top: 2%;
+    padding-left: 1%;
+    font-size: 48px;
+    font-weight: 400;
+}
+#searchform {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 165px;
+    margin-right: 15px;
+}
+#searchid {
+    outline: none;
+    border: none;
+    height: 24px;
+    width: 240px;
+    border-radius: 15px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-bottom: 1px;
+}
+.albumpics {
+    margin-top: 3%;
+    border-top: solid #1c1c1c thin;
+    border-bottom: solid #1c1c1c thin;
+    margin-left: 1%;
+    margin-right: 1%;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    overflow:auto;
+}
+.music-card {
+    margin-top: 2%;
+    height: 335px;
+    width: 212px;
+    border: solid #1c1c1c;
+    display: inline-grid;
+    margin-left: 2%;
+    ;
+    
+}
+.img-sect {
+    width: 208px;
+    height: 230px;
+}
+
+.albumarts {
+    margin: 0;
+    color:blanchedalmond;
+    padding: 2.5%;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.decrib {
+    padding-left: 2.5%;
+    font-weight: 400;
+    font-size: 15px;
+    color: blanchedalmond;
+    white-space: normal;
+}
+.controlsect{
+	border: solid red;
+	height: 12vh
+}
+.play{
+	border-radius: 60px;
+	height: 40px;
+}
+.playb{
+	height: 40px;
+	margin-top: 22px;
+	border-radius: 60px;
+	background-color:transparent;
+	border: solid thin #adafb2;
+	margin-left: 10px;
+	
+}
+.playb:hover{
+	height: 42px;
+	border-radius: 60px;
+	margin-left: 10px;
+	border: thin solid red;
+}
+#onmian{
+	border-top: thin #1c1c1c solid;
+	height: 13vh;
+	text-align: center;
+    font-size: 20px;
+    padding-top: 2.5%;
+    color: blanchedalmond;
+}.copyright a {
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 1%;
+    color: blanchedalmond;
+}
+.copyright a:hover {
+    color: deeppink;
+}
+/**----------------------------------------------------
+
+Display album pic
+
+-----------------------------------------------------**/
+ .sidebar {
+    list-style-type:none;
+    background-color:#333;
+    width:230px;
+    height:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    text-align:left;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition:1s ease;
+  }
+  
+  .sidebar a {
+    text-decoration:none;
+    color:white;
+    transition:1s ease;
+  }
+  
+  .sidebar li {
+    text-indent: 20px;
+    line-height: 40px;
+    transition:0.5s ease;
+  }
+  
+  .sidebar li:hover {
+    background-color:#777;
+    cursor:pointer;
+    text-indent: 30px;
+  }
+  
+  .sidebar > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+  }
+#logout{
+      height: 40px;
+      border:none;
+      color: white;
+      background-color: #333;
+	width: 200px;
+	text-align: left;
+  }
+#logout:hover{
+	background-color: #777;
+}
+.albumtitle {
+    font-size: 40px;
+    color:green;
+    line-height: 37px;
+    text-align: center;
+    height: 37px;
+    z-index: 5;
+    font-family: "PromximaNova-Extrabld";
+    font-weight: 600;
+    margin-top: 30%;
+    display: block;
+    text-transform: capitalize;
+    white-space: normal;
+    border-bottom: none;
+}
+.albumtitle:hover {
+    font-size: 32px;
+    color: navajowhite;
+    transform-style: preserve-3d;
+    border-bottom: none;
+}

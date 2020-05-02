@@ -1,0 +1,142 @@
+/* CSS Document */
+*{
+	margin:0;
+	
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+.signupsect{
+	height: 100vh;
+	background-image: url("../img/malte-wingen-PDX_a_82obo-unsplash.jpg");
+	background-size: cover;
+	background-position: 80% 80%;
+	border: solid yellow;
+	
+	
+}
+#singunpwelcome{
+	color: white;
+	text-align: center;
+	
+}
+#error{
+	color: red;
+	font-size: 15px;
+	text-align: center;
+}
+#signupform{
+	margin-top: 10vh;
+	border: solid red;
+	height:60vh;
+	background-color: #1F1F1F;
+	padding-top: 20%;
+	opacity: .9;
+}
+
+label{
+	display: block;
+	margin-left: 15%;
+	color: white
+}
+input{
+	display: block;
+	width: 80%;
+	outline: none;
+	
+}
+/**------------------------------------------------
+
+navigation
+
+**-------------------------------------------------**/
+.main{
+	background-color: #2f4858;
+}
+.caatmenu,.account{
+	display:none;
+}
+.logo a{
+	font-size:32px;
+	text-decoration: none;
+	background-color: #2f4858;
+	font-weight: 600;
+	color: blanchedalmond;
+}
+.mainbar{
+	
+	
+}
+#mainbarr{
+	display: none;
+}
+.mainbar ul{
+	background-color: #2f4858;
+}
+.links{
+	list-style: none;
+	padding: 2px;
+}
+.links a{
+	width: 100%;
+	text-decoration: none;
+	font-weight: 400;
+	color: blanchedalmond;
+}
+.links a:hover{
+	background-color: ghostwhite;
+	color: red;
+}
+.icon{
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width:46px;
+	height: 44px;
+}
+
+.icon:hover{
+	background-color:white;
+}
+
+
+
+
+
+
+/**--------------------------------------------------
+
+Landing page
+
+-----------------------------------------------------*/
+#welcome{
+	background-color: yellow;
+	height:50vh;
+	background-image: url("../img/sagaya-abdulhafeez-AStCNS1DdrA-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#welcome h1{
+	text-align: center;
+	font-size: 3em;
+	color: red;
+	font-weight: 600;
+	padding-top:10%;
+}
+
+#welcome p{
+	display: none;
+}
+#buttons{
+	margin-top: 10%;
+}
+.dnbt{
+	margin-left: 5%;
+	text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;  
+    background: #fc0254;
+    color:blanchedalmond;
+    cursor: pointer;
+    text-align: center;
+}

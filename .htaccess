@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^album/([0-9a-zA-Z]+) /html/albumpage.php?albid=$1 [NC]

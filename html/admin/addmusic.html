@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <style>
+        label{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="../../handlers/music.php" method="post" enctype="multipart/form-data">
+        <label for="">musicid<input type="text" name="musicid"></label>
+        <label for="">albumid <input type="text" name="albid"></label>
+        <label for="">artist <input type="text" name="artid"></label>
+        <label for="">musiclink <input type="file" name="musicfile" ></label>
+        <button type="submit" name="uploadmusic">Upload</button>
+    </form>
+</body>
+</html>

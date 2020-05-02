@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add album</title>
+    <style>
+        label{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="../../handlers/album.php" method="post" enctype="multipart/form-data">
+        <label for="albumname">Album Name <input type="text" name="albumname"></label>
+        <label for="">Album Id <input type="text" name="albumid"></label>
+        <label for="albumname">Album Releasedate <input type="date" name="Releasedate"></label>
+        <label for="albumname">Album Genre <input type="text" name="albumgenre"></label>
+        <label for="albumname">Album Ratings <input type="text" name="albumratings"></label>
+        <label for="albumname">Artist id <input type="text" name="artistid"></label>
+        <label for="albumname">Album desc <input type="text" name="albumdesc"></label>
+        <label for="">Album cover image<input type="file" name="albumcover"></label>
+        <button type="submit" name="album">Submit</button>
+
+
+
+    </form>
+</body>
+</html>
