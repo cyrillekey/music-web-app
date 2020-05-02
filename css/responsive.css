@@ -4,139 +4,232 @@
 	
 	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 }
-.signupsect{
-	height: 100vh;
-	background-image: url("../img/malte-wingen-PDX_a_82obo-unsplash.jpg");
-	background-size: cover;
-	background-position: 80% 80%;
-	border: solid yellow;
-	
-	
-}
-#singunpwelcome{
-	color: white;
-	text-align: center;
-	
-}
-#error{
-	color: red;
-	font-size: 15px;
-	text-align: center;
-}
-#signupform{
-	margin-top: 10vh;
-	border: solid red;
-	height:60vh;
-	background-color: #1F1F1F;
-	padding-top: 20%;
-	opacity: .9;
-}
-
-label{
-	display: block;
-	margin-left: 15%;
-	color: white
-}
-input{
-	display: block;
-	width: 80%;
-	outline: none;
-	
-}
-/**------------------------------------------------
-
-navigation
-
-**-------------------------------------------------**/
 .main{
-	background-color: #2f4858;
+    width: auto;
+    height: 15%;
+    background-color:#2f4858;
 }
-.caatmenu,.account{
-	display:none;
+.caatmenu{
+    display: none;
 }
-.logo a{
-	font-size:32px;
-	text-decoration: none;
-	background-color: #2f4858;
-	font-weight: 600;
-	color: blanchedalmond;
+.account{
+    display: none;
 }
 .mainbar{
-	
-	
+    position: absolute;
+    right: 0;
+    width: 150px;
+    display: none;
 }
-#mainbarr{
-	display: none;
-}
-.mainbar ul{
-	background-color: #2f4858;
-}
-.links{
-	list-style: none;
-	padding: 2px;
-}
-.links a{
-	width: 100%;
-	text-decoration: none;
-	font-weight: 400;
-	color: blanchedalmond;
-}
-.links a:hover{
-	background-color: ghostwhite;
-	color: red;
-}
-.icon{
-	position: absolute;
-	right: 0;
-	top: 0;
-	display: block;
-	width:46px;
-	height: 44px;
-}
-
-.icon:hover{
-	background-color:white;
-}
-
-
-
-
-
-
-/**--------------------------------------------------
-
-Landing page
-
------------------------------------------------------*/
 #welcome{
-	background-color: yellow;
-	height:50vh;
-	background-image: url("../img/sagaya-abdulhafeez-AStCNS1DdrA-unsplash.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+    background-image: url("../img/sagaya-abdulhafeez-AStCNS1DdrA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 92vh;
 }
-#welcome h1{
-	text-align: center;
-	font-size: 3em;
-	color: red;
-	font-weight: 600;
-	padding-top:10%;
+.mainbar ul li{
+    list-style:none;
+    margin-left:  0;
+    height: 25px;
+    background-color: aliceblue;
+    width: 100%;
+    padding-left: 0;
 }
-
-#welcome p{
-	display: none;
+.mainbar ul li a{
+    text-decoration: none;
+    color: #00cfa4;
+    border-bottom: solid thin;
+    width: 150px;
+    font-size: 17px;
 }
-#buttons{
-	margin-top: 10%;
+.mainbar ul li a:hover{
+    text-decoration: none;
+    color: red;
+    border-bottom: solid thin;
+    
 }
-.dnbt{
-	margin-left: 5%;
-	text-decoration: none;
-    border: none;
-    border-radius: 50px;
-    text-transform: uppercase;  
-    background: #fc0254;
-    color:blanchedalmond;
-    cursor: pointer;
+.iconburg{
+    position:absolute;
+    display: block;
+    top: 0;
+    right:0;
+    width:40px;
+    height: 40px
+}
+.logo{
+    width: 154px;
+}
+.logo a{
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    color: #00cfa4;
+}
+#forevery{
+    padding-top: 20vh;
     text-align: center;
+    font-size: 330%;
+    color: #00cfa4;
+}
+#hidesmall{
+    display: none;
+}
+#welcome p{
+    display: none;
+}
+#show{
+    position: absolute;
+    margin-top:9vh;
+    margin-left: 25%;
+    background-color: deeppink;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    min-width: 120px;
+    padding: 3% 5%  5%;
+    color: blanchedalmond;
+    border-radius: 60px;
+    
+}
+#explanation{
+    height: 50vh;
+}
+#try1{
+     position: absolute;
+    margin-top:9vh;
+    margin-left: 2%;
+    background-color: deeppink;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    min-width: 120px;
+    padding: 3% 5%  5%;
+    color: blanchedalmond;
+    border-radius: 60px;
+}
+.right{
+    display: none;
+}
+#exp{
+    margin-left: 5%;
+    color: #0a183d;
+    font-size:2em;
+    margin-top: 0;
+    font-weight: 600;
+}
+#howit{
+    display: none;
+}
+#pricing{
+}
+/*----------------------------------
+    
+    pricing         
+
+-----------------------------------*/
+#pricing {
+    height: 100vh;
+    overflow: auto;
+    
+}
+.text-center {
+    text-align: center;
+    font-weight: 600;
+    color: #0a183d;
+}
+.pick{
+    height: 15vh;
+
+    text-align: center;
+    white-space: pre-wrap;
+
+}
+.pricing-box-container {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    overflow: auto;
+    margin-top: 5vh;
+}
+.pricing-box {
+    margin-top: 2vh;
+    display: inline-block;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    flex: 1;
+    padding: 0 30px 30px;
+    margin: 2%;
+    min-width: 250px;
+    max-width: 350px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.pricing-box h5 {
+    padding-top: 8%;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.price {
+    margin: 24px 0;
+    font-size: 36px;
+    font-weight: 900;
+}
+.price sub, .price sup {
+    font-size: 16px;
+    font-weight: 100;
+}
+.features-list {
+    padding: 0;
+    list-style-type: none;
+    border-bottom-color: black;
+}
+.features-list li {
+    font-weight: 100;
+    padding: 12px 0;
+}
+.features-list li:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+    border-radius: 25px;
+    border: none;
+    background-color: #fc0254;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+}
+.btn-primary:hover {
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+.pricing-box-bg-image {
+    background-image: url("../img/sagaya-abdulhafeez-AStCNS1DdrA-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.pricing-box-bg-image .features-list li {
+    border-bottom-color: rgba(255, 255, 255, 1);
+}
+.pricing-box-bg-image .btn-primary {
+    background-color: #ffffff;
+    color: #000;
+}
+/*****
+*/
+.copyright{
+    margin-top: 1vh;
+    height: 15vh;
+    text-align:  center;
+    background: gray;
+    color: blanchedalmond;
+    
+}
+.copyright a{
+    text-decoration: none;
+    color: blanchedalmond;
 }

@@ -47,6 +47,7 @@ session_start();
 					<li class="links"><a href="" >Home</a></li>
 					<li class="links"><a href="#explanation" >About</a></li>
 					<li class="links"><a href="#pricing" >Pricing</a></li>
+					<li class="links" id="hidelog"><a href="#pricing" >Login/Signup</a></li>
 					<?php
 					if (isset($_SESSION['username'])) {
 						echo'<li class="links" id="cat"><a href="html/main.php">Homepage</a></li>';	
@@ -102,14 +103,15 @@ session_start();
 			<h1 id="forevery">Music For Everyone</h1>
 			<p>Listen And Download Thousand's Of Collection Of music From Your Favourite Local And International Artists And Bands.</p>
 			<div id="buttons">
-			<a href="html/signup.php" class="dnbt">Free Trial</a>
-			<a href="" class="dnbt">Download app</a>
+			<a href="html/signup.php" class="dnbt" id="show">Free Trial</a>
+			<a href="" class="dnbt" id="hidesmall">Download app</a>
 		</div>
 		</div>
 	</div>
 	<div id="explanation">
 		<div class="left">
 		<p id="exp">Unlimited Access to 100k of tracks</p>
+		<a href="" class="dnbt" id="try1">Try it now</a>
 		</div>
 		<div class="right">
 		<p class="partners">
@@ -135,7 +137,7 @@ session_start();
 	</div>
 	<div id="pricing">
 		<!--------------------->
-	<h1 class="text-center">Pick the best plan for you.</h1>
+	<h1 class="pick">Pick the best plan for you.</h1>
 
 <div class="pricing-box-container">
 	<div class="pricing-box text-center">
